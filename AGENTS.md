@@ -22,10 +22,15 @@ This file declares only what is TRUE OF THIS REPO and nothing else.
 
 The **vanilla marketing-site demo** of the AutoCSS remote-rendering phase — a real
 ballet-studio site (**Étoile Ballet Studio**) served as the CURRENT D7460N architecture
-**AS-IS** (no host CMS/framework), self-hosted as a static SPA on **GitHub Pages** at the
-custom domain **international.dance**. It is the vanilla baseline the three framework
-reference demos (`react`/`vue`/`angular`) are compared against. **Read-only:** the "API"
-is a folder of static JSON (`data/`), so there is no backend for the read path.
+**AS-IS** (no host CMS/framework), self-hosted as a static SPA on **GitHub Pages**. It is
+the vanilla baseline the three framework reference demos (`react`/`vue`/`angular`) are
+compared against. **Read-only:** the "API" is a folder of static JSON (`data/`), so there
+is no backend for the read path.
+
+**Custom domain — NOT wired yet.** The intended production home is **international.dance**,
+but a live site still occupies that domain. Until this version is approved to replace it,
+testing is via the plain GitHub Pages URL (`https://autocss-com.github.io/vanilla/`); there
+is deliberately **no `CNAME` file** so Pages never claims the real domain.
 
 ## 9. Project Structure
 
@@ -68,8 +73,9 @@ is a folder of static JSON (`data/`), so there is no backend for the read path.
 - `data/*.json` — the static read-only "API": `shell`, `home`, `classes`, `about`,
   `faculty`, `tuition`.
 - `test/*.mjs` — Playwright verify harnesses (`app`, `carousel`, `gallery`, `rowform`).
-- `CNAME` — GitHub Pages custom domain (`international.dance`).
 - `.nojekyll` — disables Jekyll processing (plain static site).
+- **No `CNAME`** — intentional; the custom domain (`international.dance`) is not wired yet
+  (see above). Testing is via `https://autocss-com.github.io/vanilla/`.
 
 ## Known divergences from canonical (surface, do not resolve silently)
 
