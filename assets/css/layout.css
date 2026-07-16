@@ -648,12 +648,6 @@ app-container {
   }
 }
 
-@container app-container (width > 50rem) {
-  :is(h1, h2, h3, h4) {
-    padding: 2rem;
-  }
-}
-
 fieldset {
   display: grid;
   overflow: auto;
