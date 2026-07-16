@@ -33,6 +33,16 @@ a:not([class]) {
   font-weight: normal;
 }
 
+/* Wider app-container → roomier heading padding. Kept here in @layer typography,
+   after the base rule above, so it wins by source order. It previously lived in
+   @layer layout and never applied: typography links after layout, and a later
+   layer beats an earlier one regardless of specificity. */
+@container app-container (width > 50rem) {
+  :is(h1, h2, h3, h4) {
+    padding: 2rem;
+  }
+}
+
 h1 {
   font-size: 2rem;
 }
