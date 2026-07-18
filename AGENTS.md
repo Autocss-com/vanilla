@@ -2,7 +2,7 @@
 
 **The canonical laws are NOT here.** They live in ONE file, once, for every project and
 every AI vendor: **`Autocss-com/ai` → `AGENTS.md`** (Response Integrity Charter `C0`–`C8`
-+ D7460N Architecture `1`–`15`). Never copy or restate them here.
++ AutoCSS Architecture `1`–`15`). Never copy or restate them here.
 
 **How they reach you:** clone the ai repo once and import it from your user-level memory —
 then every repo on the machine gets them automatically, no per-repo file:
@@ -21,7 +21,7 @@ This file declares only what is TRUE OF THIS REPO and nothing else.
 ## What this repo is
 
 The **vanilla marketing-site demo** of the AutoCSS remote-rendering phase — a real
-ballet-studio site (**Étoile Ballet Studio**) served as the CURRENT D7460N architecture
+ballet-studio site (**Étoile Ballet Studio**) served as the CURRENT AutoCSS architecture
 **AS-IS** (no host CMS/framework), self-hosted as a static SPA on **GitHub Pages**. It is
 the vanilla baseline the three framework reference demos (`react`/`vue`/`angular`) are
 compared against. **Read-only:** the "API" is a folder of static JSON (`data/`), so there
